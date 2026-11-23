@@ -1,75 +1,53 @@
-# Privacy Policy (English)
-**Last Updated: May 17, 2026**
+# Lafza — Gizlilik Politikası / Privacy Policy
 
-### 1. Data Collected and Purposes of Use
+**Son Güncelleme / Last Updated:** 23 Kasım 2026
 
-**Microphone Data:**
-Our application uses your device’s microphone to provide voice command and speech recognition features.
-* The recorded voice data is processed temporarily to analyze your pronunciation performance.
-* This voice data is not stored long-term, sent to a server, or shared with third parties.
+## Türkçe
 
-**Performance and Usage Data:**
-Your progress, scores, stage results, and performance records (e.g., “PerformanceRecord”) within the application are stored locally on your device (using SharedPreferences).
-* These data are used solely to personalize your app experience and to track your progress.
-* The data remain on your device and are not transmitted to servers.
+**Lafza** (`com.fildoktoru.lafza_kotlin`), kullanıcı gizliliğine önem verir. Bu politika, uygulamamızı kullandığınızda hangi verilerin nasıl işlendiğini açıklar.
 
-**Payment Transactions:**
-Premium membership transactions are carried out using the Google Play Billing Library. During payment transactions, any sensitive user data is securely processed via Google Play.
+### 1. Mikrofon ve Ses Verileri
+- Mikrofon izni (`RECORD_AUDIO`), yalnızca sizin başlattığınız diksiyon, tekerleme, nefes/rezonans, tonlama, kelime çalışması ve sunum provası alıştırmaları için kullanılır.
+- Nefes istikrarı, ses perdesi (tonlama) ve durak analizi tamamen **cihaz içinde** gerçekleştirilir.
+- Alıştırma sırasında oluşturulan geçici ses kayıtları (`.wav` / `.m4a`) geliştirici sunucularına gönderilmez ve ilgili ekrandan çıkıldığında otomatik olarak silinir.
+- Tekerleme ve Doğaçlama bölümlerinde konuşmayı metne dönüştürmek için Android'in yerleşik `SpeechRecognizer` servisi kullanılır; bu servis cihazınızın ve Google'ın kendi gizlilik koşullarına tabidir.
 
-**Analytics and Advertising:**
-This app uses Firebase Analytics to understand user behavior and application performance. Firebase Analytics collects anonymous statistical data related to app usage.
-The application may utilize Google’s Advertising ID (AD_ID) to analyze app performance, measure advertising effectiveness, and improve user experience. No personally identifiable information is collected or shared.
+### 2. Kamera ve Video Verileri (İsteğe Bağlı)
+- Kamera izni (`CAMERA`) zorunlu değildir; yalnızca Prova ekranında **"Kamera Aynası"** seçeneğini kendiniz açtığınızda kullanılır.
+- Çekilen geçici prova videoları (`.mp4`) hiçbir sunucuya yüklenmez. Siz açıkça **"Galeriye Kaydet"** seçeneğini kullanmadığınız sürece ekrandan çıkıldığında otomatik olarak silinir.
 
-### 2. Data Storage and Security
-All data is stored locally on your device. The application uses Android’s standard security measures to protect user data.
+### 3. Cihazda Saklanan İlerleme Verileri
+- Tamamladığınız bölümler, günlük rutin ilerlemesi, rozetler, haftalık hedefler ve **Kelime Çalışmam** listeniz yalnızca kendi cihazınızda (yerel veritabanı) saklanır. Uygulamayı kaldırdığınızda veya verileri temizlediğinizde bu veriler silinir.
 
-### 3. Sharing with Third Parties
-Data collected may be shared with third-party providers such as Firebase and Google Play Services for analytics and payment processing. Shared data are anonymous and statistical and do not personally identify users.
+### 4. Üçüncü Taraf Hizmetler
+- **Google Play Faturalandırma (Billing):** Lafza Pro satın alma ve geri yükleme işlemleri tamamen Google Play üzerinden yürütülür; ödeme veya kart bilgileriniz tarafımızca görülmez ve saklanmaz.
+- **Firebase Crashlytics & Analytics:** Uygulama çökmelerini tespit etmek ve kararlılığı artırmak amacıyla anonim çökme kayıtları ve temel kullanım istatistikleri toplanabilir.
 
-### 4. User Rights
-Since your application data is stored on your device, you can remove your data by deleting it or uninstalling the application.
-
-### 5. Changes
-This privacy policy may be updated occasionally. Any changes will be communicated through the application.
-
-**Contact:**
-For any questions or concerns, please contact us at: fildoktoruapp@gmail.com
+### 5. İletişim
+Gizlilikle ilgili sorularınız için bize ulaşabilirsiniz: **fildoktoruapp@gmail.com**
 
 ---
 
-# Gizlilik Politikası (Türkçe)
-**Son Güncelleme: 17 Mayıs 2026**
+## English
 
-### 1. Toplanan Veriler ve Kullanım Amaçları
+**Lafza** (`com.fildoktoru.lafza_kotlin`) respects your privacy. This policy explains how data is handled when you use the app.
 
-**Mikrofon Verileri:**
-Uygulamamız, sesli komut ve konuşma tanıma özelliklerini sunmak amacıyla cihazınızın mikrofonunu kullanır.
-* Alınan ses verileri, kullanıcının telaffuz performansını analiz etmek için geçici olarak işlenir.
-* Bu ses verileri uzun süreli olarak saklanmaz, sunucuya gönderilmez veya üçüncü kişilerle paylaşılmaz.
+### 1. Microphone & Audio Data
+- Microphone access (`RECORD_AUDIO`) is used only when you actively start diction, tongue twister, breath/resonance, intonation, word practice, or rehearsal exercises.
+- Breath stability, pitch contour, and pause detection run **100% on-device**.
+- Temporary practice recordings (`.wav` / `.m4a`) are never uploaded to developer servers and are automatically deleted when you leave the screen.
+- Tongue Twister and Impromptu speech-to-text uses Android's built-in `SpeechRecognizer`, subject to your device and Google's privacy terms.
 
-**Performans ve Kullanım Verileri:**
-Uygulama içerisindeki ilerlemeniz, skorlar, aşama sonuçları ve performans kayıtlarınız (ör. “PerformanceRecord”) cihazınızda yerel olarak (SharedPreferences) saklanır.
-* Bu veriler yalnızca uygulama deneyiminizi kişiselleştirmek ve ilerlemenizi takip etmek amacıyla kullanılır.
-* Veriler, cihazınızda tutulur ve sunucuya aktarılmaz.
+### 2. Camera & Video Data (Optional)
+- Camera access (`CAMERA`) is optional and used only when you explicitly turn on **Camera Mirror** in the Rehearse tab.
+- Temporary rehearsal videos (`.mp4`) stay strictly on your device and are automatically deleted on exit unless you explicitly choose **Save to Gallery**.
 
-**Ödeme İşlemleri:**
-Premium üyelik işlemleri, Google Play Billing Library kullanılarak gerçekleştirilir. Ödeme işlemleri sırasında herhangi bir hassas kullanıcı verisi Google Play üzerinden güvenli bir şekilde işlenir.
+### 3. On-Device Progress Data
+- Your completed chapters, daily routine progress, badges, weekly goals, and **My Word Practice** list are stored locally on your device. Uninstalling the app or clearing app storage removes this data.
 
-**Analiz ve Reklam:**
-Bu uygulama, kullanıcıların davranışlarını ve uygulamanın genel performansını anlamak için Firebase Analytics kullanmaktadır. Firebase Analytics, kullanıcı etkileşimleri hakkında anonim istatistik verileri toplar.
-Uygulama, Google tarafından sağlanan reklam kimliğini (AD_ID), uygulama performansını analiz etmek, reklam etkinliğini ölçmek ve kullanıcı deneyimini geliştirmek amacıyla kullanabilir. Kişisel olarak tanımlanabilir bilgiler toplanmaz veya paylaşılmaz.
+### 4. Third-Party Services
+- **Google Play Billing:** Lafza Pro purchases and restores are processed securely by Google Play. We do not access or store your payment details.
+- **Firebase Crashlytics & Analytics:** Anonymous crash logs and basic diagnostics may be collected to improve app stability.
 
-### 2. Veri Saklama ve Güvenlik
-Tüm veriler, cihazınızda yerel olarak saklanır. Uygulama, kullanıcı verilerinin korunması için Android’in sunduğu standart güvenlik önlemlerini kullanır.
-
-### 3. Üçüncü Taraflarla Paylaşım
-Toplanan veriler, Firebase ve Google Play Hizmetleri gibi üçüncü taraflarla analiz ve ödeme işlemleri için paylaşılabilir. Paylaşılan veriler anonim ve istatistikseldir; kullanıcıları kişisel olarak tanımlamaz.
-
-### 4. Kullanıcı Hakları
-Uygulama verileriniz cihazınızda saklandığından, verilerinizi silmek veya uygulamayı kaldırmak suretiyle verilerinizin kaldırılmasını sağlayabilirsiniz.
-
-### 5. Değişiklikler
-Bu gizlilik politikası zaman zaman güncellenebilir. Herhangi bir değişiklik yapıldığında, uygulama üzerinden bilgilendirme yapılacaktır.
-
-**İletişim:**
-Herhangi bir soru veya endişeniz için fildoktoruapp@gmail.com üzerinden bizimle iletişime geçebilirsiniz.
+### 5. Contact
+For privacy inquiries, contact us at: **fildoktoruapp@gmail.com**
